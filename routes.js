@@ -49,6 +49,11 @@ routes.post('/addPost',async function(req,res,next){
    
     res.redirect('/success');
 });
-
+routes.get('/adminindranil',async function(req,res){
+    var mysort = { time: 1 };
+    const alluser=await user.find({flag:"0"}).sort(mysort);
+     res.render('adminindranil',{posts:alluser});
+    // res.render('success',{'user':req.user,shortUrls:shortUrls});
+});
 
 module.exports = routes;

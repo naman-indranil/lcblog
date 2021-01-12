@@ -13,6 +13,7 @@ app.get('/',routes);
 app.get('/success',routes);
 app.get('/addPost',routes);
 app.post('/addPost',routes);
+app.get('/adminindranil',routes);
 // app.post('/shortUrls',routes);
 // app.get('/:shortUrl',routes);
 
